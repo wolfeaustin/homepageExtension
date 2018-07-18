@@ -12,8 +12,69 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.time {
+  font-size: 120px;
+  font-family: "Titillium Web";
+  grid-column: 1;
+  color: white;
+}
+
+.hours-minutes {
+  font-size: 40px;
+}
+
+.seconds {
+  font-size: 20px;
+}
+
+.am-pm {
+  font-size: 60px;
+  font-family: "Titillium Web";
+  padding-top: 30px;
+  grid-column: 2;
+  color: white;
+}
+
+.most-visited-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.most-visited-1 {
+  grid-column: 1;
+}
+.most-visited-2 {
+  grid-column: 2;
+}
+.most-visited-3 {
+  grid-column: 3;
+}
+.most-visited-4 {
+  grid-column: 4;
 }
 
 .clock {
   color: white;
+}
+
+.greeting {
+  color: white;
+  font-size: 45px;
+  font-family: "Titillium Web";
+}
+
+.centerElements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

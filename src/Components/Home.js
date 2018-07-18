@@ -2,6 +2,7 @@ import React from "react";
 import "../Home.css";
 import Clock from "./Clock";
 import MostVisitedContainer from "./MostVisitedContainer";
+import photo from "../hand_in_water.jpg";
 
 const authenticationKey =
   "f1e9e7963b1eaa48dad33fa77d814efd65c5915c4834dce69a64c2f7133f0243";
@@ -40,26 +41,21 @@ class Home extends React.Component {
   }
 
   render() {
-    console.log(this.state);
+    console.log({ photo });
     return (
       <div
         className="backgroundImage"
         style={{
-          backgroundImage: `url(${this.state.photoURL})`
+          backgroundImage: `url(${photo})`
         }}
       >
-        <div
-          style={{
-            margin: "0 auto",
-            position: "relative",
-            top: "50%"
-          }}
-        >
-          <h1>{this.state.greeting}</h1>
-          <Clock />
-          {console.log(this)}
+        <div className="centerElements">
+          <div>
+            <Clock />
+            <div className="greeting">{this.state.greeting}</div>
 
-          <MostVisitedContainer />
+            <MostVisitedContainer />
+          </div>
         </div>
       </div>
     );

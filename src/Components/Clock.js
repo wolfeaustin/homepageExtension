@@ -33,11 +33,13 @@ class Clock extends React.Component {
   }
 
   render() {
-    console.log("clock", this.state);
     return (
       <div>
-        <h1>{this.state.currentTime}</h1>
-        <h3>{this.state.amPM}</h3>
+        <div className="time-container">
+          <div className="time">{this.state.currentTime}</div>
+          <div className="am-pm">{this.state.amPM}</div>
+        </div>
+
         <h2>{this.state.date}</h2>
       </div>
     );
